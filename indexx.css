@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: contain;
+}
+.flex-container{
+    
+    background-color: aqua;
+    height: 100vh;
+    
+    display:flex;
+    flex-direction: column;
+    background-size: contain;
+    background-position: center;
+}
+.header{
+    height:10vh;
+    background-color: black;
+    color: gray;
+    text-align: center; 
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.nav{
+    height:10vh;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    height:70vh;
+    background-color: lightslategray;
+}
+.left{
+    width:70%;
+    text-align: center;
+    
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.left h1{
+    padding-top: 150px;
+}
+.aside{
+    width:30%;
+    text-align: center;
+    
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: lightskyblue;
+    
+    
+    
+}
+.aside h1{
+    padding-top: 150px;
+}
+.footer{
+    text-align: center;
+    text-transform: capitalize;
+    background-color: black;
+    color: gray;
+    font-weight: bold;
+    height:10vh;
+    padding-top: 10px;
+}
+@media only screen and (max-width:420px) {
+    .flex-container{
+        margin-bottom: 0;
+        position:relative;
+    }
+    .main{
+        
+        flex-direction: column;
+        display:block;
+        height:70vh;
+        flex-wrap: wrap;
+        
+        
+        
+
+    }
+    .left,.aside,.header,.nav,.footer{
+        width:100%;
+    }
+    .left{
+        height:50vh;
+    }
+    .aside{
+        height:20vh;
+    }
+    .left h1{
+        padding-top: 60px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .aside h1{
+        padding-top: 40px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .footer{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }.header{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+        
+    
+}
